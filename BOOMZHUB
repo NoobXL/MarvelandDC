@@ -34,7 +34,7 @@ end
 end
 end)
 ---
-Section:NewToggle("AutoBoss", "", function(AutoBossWarp)
+Section:NewToggle("AutoBoss[90%]", "", function(AutoBossWarp)
 AutoBoss = AutoBossWarp
 end)
 
@@ -50,6 +50,25 @@ end)
 end
 end
 end)
+---
+
+Section:NewToggle("AutoBoss2[90%]", "", function(AutoBossWarp2)
+AutoBoss2 = AutoBossWarp2
+end)
+
+spawn(function()
+while wait() do
+if AutoBoss2 then
+pcall(function()
+
+game:GetService("ReplicatedStorage").Remotes.JoinBoss:FireServer()
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-124.60581970214844, 2020.5986328125, -145.35165405273438) 
+end)
+end
+end
+end)
+
 ---
 Section:NewTextBox("WalkSpeed", "", function(WalkSpeedbox)
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = WalkSpeedbox
