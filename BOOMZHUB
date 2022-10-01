@@ -14,7 +14,7 @@ while wait() do
 if AutoJump then
 pcall(function()
 game.Players.LocalPlayer.Character.Humanoid.Jump = true
-wait(60)
+wait(5)
 end)
 end
 end
