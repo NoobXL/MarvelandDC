@@ -34,7 +34,7 @@ end
 end
 end)
 ---
-Section:NewToggle("AutoBoss[90%]", "", function(AutoBossWarp)
+Section:NewToggle("AutoBoss1[90%]", "", function(AutoBossWarp)
 AutoBoss = AutoBossWarp
 end)
 
